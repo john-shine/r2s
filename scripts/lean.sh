@@ -74,8 +74,9 @@ git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
 # Add subconverter
 git clone --depth=1 https://github.com/tindy2013/openwrt-subconverter
 
-# Add luci-app-smartdns & smartdns
-svn export https://github.com/281677160/openwrt-package/trunk/luci-app-smartdns
+# Add luci-app-mosdns & mosdns
+svn export https://github.com/281677160/openwrt-package/trunk/luci-app-mosdns
+svn export https://github.com/sbwml/luci-app-mosdns/trunk/mosdns mosdns
 
 # Add luci-app-services-wolplus
 svn export https://github.com/msylgj/OpenWrt_luci-app/trunk/luci-app-services-wolplus
