@@ -22,7 +22,8 @@ env:
   CONFIG_FILE: configs/lean/lean_docker.config
   DIY_SH: scripts/lean.sh
   KMODS_IN_FIRMWARE: true
-  UPLOAD_RELEASE: true
+  UPLOAD_RELEASE: false
+  UPLOAD_FIRMWARE: false
   TZ: Asia/Shanghai
 
 jobs:
@@ -166,7 +167,7 @@ jobs:
           
     - name: Upload firmware to release
       uses: softprops/action-gh-release@v1
-      if: steps.tag.outputs.status == 'success' && !cancelled()
+      if: env.UPLOAD_FIRMWARE == 'true' && steps.tag.outputs.status == 'success' && !cancelled()
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
