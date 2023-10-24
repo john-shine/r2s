@@ -26,9 +26,9 @@ rm -rf openwrt-package/luci-app-verysync
 svn export https://github.com/QiuSimons/OpenWrt-Add/trunk/luci-app-irqbalance
 
 # Add luci-app-passwall
-git clone https://github.com/xiaorouji/openwrt-passwall
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages.git
 svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall
+svn export https://github.com/xiaorouji/openwrt-passwall2/trunk/luci-app-passwall2
 
 # Add luci-app-ssr-plus
 git clone --depth=1 https://github.com/fw876/helloworld
