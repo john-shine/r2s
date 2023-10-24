@@ -6,6 +6,8 @@
 # Author: SuLingGG
 # Blog: https://mlapp.cn
 #=================================================
+# fix WARNING: Makefile 'package/feeds/packages/glib2/Makefile' has a build dependency on 'pcre2/host', which does not exist
+sed -i "s@HOST_BUILD_DEPENDS:=pcre2/host libffi/host@HOST_BUILD_DEPENDS:=libffi/host@g" feeds/packages/glib2/Makefile
 
 # alist
 git clone https://github.com/sbwml/luci-app-alist package/alist
