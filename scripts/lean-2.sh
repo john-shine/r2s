@@ -44,7 +44,7 @@ git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
 git clone --depth=1 https://github.com/ysc3839/luci-proto-minieap
 
 # Add OpenClash
-svn export https://github.com/vernesong/OpenClash/trunk/luci-app-openclash
+svn export https://github.com/vernesong/OpenClash/tags/v0.45.103-beta/luci-app-openclash
 
 # Add luci-app-adguardhome
 svn export https://github.com/DHDAXCW/openwrt-packages/trunk/luci-app-adguardhome
